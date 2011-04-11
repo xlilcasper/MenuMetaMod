@@ -91,7 +91,8 @@ public class MetaModMenu {
 		else
 		{
 			player.sendMessage("Performing command " + commands[optionOffset+response-1]);
-			player.performCommand( commands[optionOffset+response-1] );
+			//player.performCommand( commands[optionOffset+response-1] );
+			player.chat( "/"+commands[optionOffset+response-1] );
 			return ResponseStatus.HandledFinished;
 		}
 	}
